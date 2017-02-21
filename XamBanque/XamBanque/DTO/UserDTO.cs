@@ -12,7 +12,7 @@ namespace XamBanque.DTO
         public String lastName { get; set; }
         public String firstName { get; set; }
         public String email { get; set; }
-        public int phone { get; set; }
-        public int bankId { get; set; }
+        public String phone { get; set; }
+        public long bankId { get; set; }
     }
 }
