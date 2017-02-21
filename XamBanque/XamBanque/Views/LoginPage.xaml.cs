@@ -54,6 +54,7 @@ namespace XamBanque.Views
             {
                 await DisplayAlert(null, "Merci de remplir votre Login ET votre mot de passe", "OK");
                 connexionButton.IsEnabled = true;
+
             }
 
         }
