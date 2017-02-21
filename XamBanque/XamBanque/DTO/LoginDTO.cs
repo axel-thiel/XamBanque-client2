@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace XamBanque.DTO
 {
-    class LoginDTO
+    public class LoginDTO
     {
-        private long login { get; set; }
-        private long password { get; set; }
+        public long login { get; set; }
+        public long password { get; set; }
     }
+
 }

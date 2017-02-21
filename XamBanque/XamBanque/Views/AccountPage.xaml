@@ -6,8 +6,18 @@
              BackgroundColor="Silver">
 
   <ScrollView>
-
+    
     <StackLayout Orientation="Vertical">
+
+      <StackLayout Orientation="Horizontal"
+                  Margin="10, 10,30, 10"
+                  HorizontalOptions="Center">
+        
+        <Label FontSize="Medium" Text="Comptes de " />
+        <Label FontSize="Medium" x:Name="userLastName"/>
+        <Label FontSize="Medium" x:Name="userFirstName" />
+
+      </StackLayout>
 
       <StackLayout Orientation="Horizontal"
                    Margin="10, 10,30, 10"

@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using XamBanque.DTO;
+using XamBanque.WebServices;
 
 namespace XamBanque.Views
 {
@@ -24,33 +26,41 @@ namespace XamBanque.Views
         {
             connexionButton.IsEnabled = false;
 
-            var login = loginEditText.Text;
-            var passWord = passwordEditText.Text;
+            LoginDTO loginDto = new LoginDTO();
 
-       
-
-            if ("user".Equals(login))
+            if (loginEditText.Text != null && passwordEditText.Text != null)
             {
-                if ("user".Equals(passWord))
-                {
-                    loginEditText.Text = "";
-                    passwordEditText.Text = "";
-                    await Navigation.PushModalAsync(new MainPage());
-                    connexionButton.IsEnabled = true;
+                loginDto.login = Convert.ToInt64(loginEditText.Text);
+            loginDto.password = Convert.ToInt64(passwordEditText.Text);
 
-                }
-                else
-                {
-                    await DisplayAlert(null, "Mot de passe incorrect", "OK");
-                    connexionButton.IsEnabled = true;
-                }
-            }
-            else
+            UserDTO userDto = await RestServices.connectionAsync(loginDto);
+
+            if(userDto != null)
             {
-                await DisplayAlert(null, "Login incorrect", "OK");
+                loginEditText.Text = null;
+                passwordEditText.Text = null;
+
+                App.connectedUserDto = userDto;
+
+                await Navigation.PushModalAsync(new MainPage());
+
+                connexionButton.IsEnabled = true;
+            } else
+                {
+                    await DisplayAlert(null, "Mot de passe ou Login incorrect", "OK");
+                    connexionButton.IsEnabled = true;
+                }     
+            } else
+            {
+                await DisplayAlert(null, "Merci de remplir votre Login ET votre mot de passe", "OK");
                 connexionButton.IsEnabled = true;
             }
+
         }
 
+        private void checkLoginAndPass()
+        {
+            
+        }
     }
 }

@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace XamBanque.DTO
 {
-    class UserDTO
+    public class UserDTO
     {
-        private long id { get; set; }
-        private String lastName { get; set; }
-        private long firstName { get; set; }
-        private long login { get; set; }
-        private long password { get; set; }
-        private String email { get; set; }
-        private int phone { get; set; }
-        private int bankId { get; set; }
+        public long id { get; set; }
+        public String lastName { get; set; }
+        public String firstName { get; set; }
+        public String email { get; set; }
+        public int phone { get; set; }
+        public int bankId { get; set; }
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using XamBanque.DTO;
 using XamBanque.MenuItems;
 
 namespace XamBanque.Views
@@ -16,6 +17,7 @@ namespace XamBanque.Views
 
         public MainPage()
         {
+
             InitializeComponent();
 
             MenuList = new List<MasterPageItems>();
@@ -38,7 +40,8 @@ namespace XamBanque.Views
             navigationDrawerList.ItemsSource = MenuList;
 
             // Initial navigation, this can be used for our home page
-            Detail = new NavigationPage((Page)Activator.CreateInstance(typeof(AccountPage)));
+            Detail = new NavigationPage(new AccountPage());
+
         }
 
         protected virtual void OnResume()

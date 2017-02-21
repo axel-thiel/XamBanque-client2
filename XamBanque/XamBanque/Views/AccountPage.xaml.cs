@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using XamBanque.DTO;
 using XamBanque.Objects;
 
 namespace XamBanque.Views
@@ -16,8 +17,9 @@ namespace XamBanque.Views
 
         public AccountPage()
         {
-            InitializeComponent();
 
+            InitializeComponent();
+           
             CreateAccountList();
 
             CreatPublicityList();
@@ -27,6 +29,10 @@ namespace XamBanque.Views
             accountListView.ItemsSource = ListOfAccount;
 
             publicityListView.ItemsSource = ListOfPublicity;
+
+            userFirstName.Text = App.connectedUserDto.firstName;
+
+            userLastName.Text = App.connectedUserDto.lastName;
 
             accountListView.ItemTapped += async (sender, args) =>
             {

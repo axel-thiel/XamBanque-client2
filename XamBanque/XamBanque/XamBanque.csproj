@@ -70,6 +70,7 @@
     <Compile Include="Views\TransfertForm.xaml.cs">
       <DependentUpon>TransfertForm.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WebServices\RestServices.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
