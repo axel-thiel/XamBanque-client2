@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamBanque.Views.BankTransferPage"
+             Title="Virements">
+
+  <ScrollView>
+
+    <StackLayout Orientation="Vertical">
+
+      <StackLayout BackgroundColor="White"
+                   Margin="20,20,20,10"
+                   HeightRequest="60">
+
+        <Button FontSize="Medium"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand"
+                 Text="Nouveau virement"
+                  Clicked="NewTransfert_OnClickedAsync"
+                   />
+
+      </StackLayout>
+
+      <StackLayout BackgroundColor="White"
+                   Margin="20,10,20,10"
+                   HeightRequest="60">
+
+        <Button FontSize="Medium"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               Text="Ajouter un bénéficiaire"/>
+
+      </StackLayout>
+
+      <StackLayout BackgroundColor="White"
+                   Margin="20,10,20,10"
+                   HeightRequest="60">
+
+        <Button FontSize="Medium"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand"
+               Text="Virements en cours"/>
+
+      </StackLayout>
+
+      <StackLayout BackgroundColor="White"
+                   Margin="20,10,20,10"
+                   HeightRequest="60">
+
+        <Button FontSize="Medium"
+               VerticalOptions="CenterAndExpand"
+               HorizontalOptions="Center"
+               Text="Mandats de prélèvement"/>
+
+      </StackLayout>
+
+    </StackLayout>
+
+  </ScrollView>
+  
+</ContentPage>

@@ -17,8 +17,7 @@ namespace XamBanque.Views
 
         protected virtual void OnResume()
         {
-
-
+            
         }
 
         private async void ConnexionButton_OnClickedAsync(object sender, EventArgs e)
@@ -34,18 +33,22 @@ namespace XamBanque.Views
             {
                 if ("user".Equals(passWord))
                 {
-                   // await Navigation.PushModalAsync(new MainPage());
+                    loginEditText.Text = "";
+                    passwordEditText.Text = "";
+                    await Navigation.PushModalAsync(new MainPage());
                     connexionButton.IsEnabled = true;
 
                 }
                 else
                 {
-                    await DisplayAlert(null, "Incorrect password", "OK");
+                    await DisplayAlert(null, "Mot de passe incorrect", "OK");
+                    connexionButton.IsEnabled = true;
                 }
             }
             else
             {
-                await DisplayAlert(null, "Incorrect Login", "OK");
+                await DisplayAlert(null, "Login incorrect", "OK");
+                connexionButton.IsEnabled = true;
             }
         }
 

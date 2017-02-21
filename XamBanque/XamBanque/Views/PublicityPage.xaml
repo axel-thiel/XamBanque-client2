@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamBanque.Views.PublicityPage"
+             Title="Nos offres"
+             BackgroundColor="Silver">
+
+  <ScrollView>
+
+    <StackLayout Orientation="Vertical"
+                 BackgroundColor="White"
+                 VerticalOptions="Start"
+                 Margin="5">
+
+      <Label x:Name="pubTitle"
+             FontSize="Large"
+             HorizontalOptions="Center"/>
+
+      <Label x:Name="pubDescription"
+             FontSize="Medium"
+             Margin="5"/>
+
+    </StackLayout>
+
+  </ScrollView>
+  
+</ContentPage>

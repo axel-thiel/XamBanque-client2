@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamBanque.Views.AccountPage"
+             Title="Vos Comptes"
+             BackgroundColor="Silver">
+
+  <ScrollView>
+
+    <StackLayout Orientation="Vertical">
+
+      <StackLayout Orientation="Horizontal"
+                   Margin="10, 10,30, 10"
+                   HorizontalOptions="Center">
+
+        <Label FontSize="Medium" Text="Solde total" />
+        <Label FontSize="Medium" x:Name="AllAccountsCredit"/>
+        <Label FontSize="Medium" Text="€"/>
+
+      </StackLayout>
+
+      <ListView x:Name="accountListView" Margin="5,0,5,0"
+                RowHeight="60" >
+
+        <ListView.ItemTemplate>
+
+          <DataTemplate>
+
+            <ViewCell>
+
+              <StackLayout Orientation="Horizontal" BackgroundColor="White"
+                           Padding="5,0,5,0" Margin="0,0,0,10">
+
+                <StackLayout Orientation="Vertical"
+                             HorizontalOptions="FillAndExpand"
+                             VerticalOptions="Center">
+
+                  <Label Text="{Binding AccountName}" />
+                  <Label Text="{Binding AccountNumber}"/>
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="End">
+
+                  <Label Text="{Binding AccountCredit}" VerticalOptions="Center"/>
+                  <Label Text="€" VerticalOptions="Center"/>
+
+                </StackLayout>
+
+              </StackLayout>
+
+            </ViewCell>
+
+          </DataTemplate>
+
+        </ListView.ItemTemplate>
+
+      </ListView>
+
+      <ListView x:Name="publicityListView" Margin="5,0,5,0"  RowHeight="120">
+
+        <ListView.ItemTemplate>
+
+          <DataTemplate>
+
+            <ViewCell>
+
+              <StackLayout Orientation="Vertical" BackgroundColor="White"
+                           Padding="5,0,5,0" Margin="0,0,0,5">
+
+                <Label Text="{Binding pubName}" FontSize="Medium" />
+                <Label Text="{Binding pubText}" FontSize="Small"/>
+
+              </StackLayout>
+
+            </ViewCell>
+
+          </DataTemplate>
+
+        </ListView.ItemTemplate>
+
+      </ListView>
+
+    </StackLayout>
+
+  </ScrollView>
+  
+</ContentPage>

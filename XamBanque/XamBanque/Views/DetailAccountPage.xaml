@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamBanque.Views.DetailAccountPage"
+             Title="Détailles du Compte"
+             BackgroundColor="Silver">
+
+  <ScrollView>
+
+    <StackLayout Orientation="Vertical">
+
+      <StackLayout Orientation="Horizontal"
+                   BackgroundColor="White"
+                   Padding="10,0,10,0"
+                   Margin="5">
+
+        <StackLayout Orientation="Vertical"
+                     HorizontalOptions="FillAndExpand"
+                     VerticalOptions="Center">
+
+          <Label x:Name="accountNameLabel"
+                 FontSize="Large"/>
+          
+          <Label x:Name="accountNumberLabel"
+                 FontSize="Large"/>
+
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="End">
+
+          <Label x:Name="accountCreditLabel"
+                 VerticalOptions="Center"
+                 TextColor="Green"
+                 FontSize="Large"/>
+
+          <Label Text="€"
+                 VerticalOptions="Center"
+                 TextColor="Green"
+                 FontSize="Large"/>
+
+        </StackLayout>
+
+      </StackLayout>
+
+      <StackLayout Orientation="Vertical"
+                   BackgroundColor="White"
+                   Padding="10,0,10,0"
+                   Margin="5">
+
+        <Label Text="Liste des opérations"
+               FontSize="Large"
+               FontAttributes="Bold"
+               Margin="10"/>
+
+        <Label Text="Janvier 2017"
+               FontAttributes="Bold"
+               Margin="5"/>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="qkvùlj fdjqmlh"
+                 HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="-31,03 €"
+                 HorizontalOptions="End"
+                 TextColor="Red"/>
+          
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="hqsmk fhqsdhfmoh"
+                 HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="- 11,03 €"
+                 HorizontalOptions="End"
+                 TextColor="Red"/>
+          
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="hqsmk fhqsdhfmoh"
+                 HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="+ 185,03 €"
+                 HorizontalOptions="End"
+                 TextColor="Green"/>
+          
+        </StackLayout>
+
+        <Label Text="Descembre 2016"
+               FontAttributes="Bold"
+               Margin="5"/>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="qkvjhkvqùmk fhqsdhfmoh"
+                 HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="+ 31,03 €"
+                 TextColor="Green"
+                 HorizontalOptions="End"/>
+          
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="qsmk fhqsdhfmoh"
+                 HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="- 3,03 €"
+                 TextColor="Red"
+                 HorizontalOptions="End"/>
+          
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="qkvjhkv fhqsdhfmoh"
+                 HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="- 331,03 €"
+                 TextColor="Red"
+                 HorizontalOptions="End"/>
+          
+        </StackLayout>
+
+        <Label Text="Novembre 2016"
+               FontAttributes="Bold"
+               Margin="5"/>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="qkvùlj fdjqmlh"
+             HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="-31,03 €"
+             HorizontalOptions="End"
+             TextColor="Red"/>
+          
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="hqsmk fhqsdhfmoh"
+             HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="- 11,03 €"
+             HorizontalOptions="End"
+             TextColor="Red"/>
+          
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="hqsmk fhqsdhfmoh"
+             HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="+ 185,03 €"
+             HorizontalOptions="End"
+             TextColor="Green"/>
+          
+        </StackLayout>
+
+        <Label Text="Octobre 2016"
+           FontAttributes="Bold"
+           Margin="5"/>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="qkvjhkvqùmk fhqsdhfmoh"
+             HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="+ 31,03 €"
+             TextColor="Green"
+             HorizontalOptions="End"/>
+          
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="qsmk fhqsdhfmoh"
+             HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="- 3,03 €"
+             TextColor="Red"
+             HorizontalOptions="End"/>
+          
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="qkvjhkv fhqsdhfmoh"
+                 HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="- 331,03 €"
+                 TextColor="Red"
+                 HorizontalOptions="End"/>
+          
+        </StackLayout>
+
+        <Label Text="Septembre 2016"
+               FontAttributes="Bold"
+               Margin="5"/>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="qkvùlj fdjqmlh"
+                 HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="-31,03 €"
+                 HorizontalOptions="End"
+                 TextColor="Red"/>
+          
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="hqsmk fhqsdhfmoh"
+                 HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="- 11,03 €"
+                 HorizontalOptions="End"
+                 TextColor="Red"/>
+          
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="hqsmk fhqsdhfmoh"
+                 HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="+ 185,03 €"
+                 HorizontalOptions="End"
+                 TextColor="Green"/>
+          
+        </StackLayout>
+
+        <Label Text="Août 2016"
+               FontAttributes="Bold"
+               Margin="5"/>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="qkvjhkvqùmk fhqsdhfmoh"
+                 HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="+ 31,03 €"
+                 TextColor="Green"
+                 HorizontalOptions="End"/>
+          
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="qsmk fhqsdhfmoh"
+                 HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="- 3,03 €"
+                 TextColor="Red"
+                 HorizontalOptions="End"/>
+          
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal">
+          
+          <Label Text="qkvjhkv fhqsdhfmoh"
+                 HorizontalOptions="StartAndExpand"/>
+          
+          <Label Text="- 331,03 €"
+                 TextColor="Red"
+                 HorizontalOptions="End"/>
+          
+        </StackLayout>
+
+      </StackLayout>
+
+    </StackLayout>
+
+  </ScrollView>
+  
+</ContentPage>
