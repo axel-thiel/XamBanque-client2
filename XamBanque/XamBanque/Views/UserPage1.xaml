@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamBanque.Views.UserPage1"
+             Title="Informations Personnelles"
+             BackgroundColor="Silver">
+
+  <ScrollView>
+
+    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+
+      <StackLayout Orientation="Horizontal"
+                   HorizontalOptions="FillAndExpand"
+                   Margin="10">
+
+        <Label FontSize="Medium" Text="Nom :" HorizontalOptions="FillAndExpand" />
+        <Label FontSize="Medium" x:Name="userLastName"/>
+
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal"
+                   Margin="10">
+
+        <Label FontSize="Medium" Text="Prénom :" HorizontalOptions="FillAndExpand"/>
+        <Label FontSize="Medium" x:Name="userFirstName"/>
+
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal"
+                   Margin="10">
+
+        <Label FontSize="Medium" Text="Email :" HorizontalOptions="FillAndExpand"/>
+        <Label FontSize="Medium" x:Name="userEmail"/>
+
+      </StackLayout>
+
+      <StackLayout Orientation="Horizontal"
+                   Margin="10">
+
+        <Label FontSize="Medium" Text="Tel :" HorizontalOptions="FillAndExpand"/>
+        <Label FontSize="Medium" x:Name="userPhone"/>
+
+      </StackLayout>
+
+    </StackLayout>
+
+  </ScrollView>
+  
+</ContentPage>

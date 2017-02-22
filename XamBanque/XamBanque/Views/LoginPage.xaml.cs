@@ -30,7 +30,7 @@ namespace XamBanque.Views
 
             if (loginEditText.Text != null && passwordEditText.Text != null)
             {
-                loginDto.login = Convert.ToInt64(loginEditText.Text);
+            loginDto.login = Convert.ToInt64(loginEditText.Text);
             loginDto.password = Convert.ToInt64(passwordEditText.Text);
 
             UserDTO userDto = await RestServices.connectionAsync(loginDto);

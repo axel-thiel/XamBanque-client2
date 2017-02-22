@@ -14,12 +14,14 @@
       <Entry Placeholder="Login"
              Margin="10"
              x:Name="loginEditText"
+             Text="1"
                    />
 
       <Entry IsPassword="True"
              Placeholder="PassWord"
              Margin="10"
-             x:Name="passwordEditText"/>
+             x:Name="passwordEditText"
+             Text="1"/>
 
       <Button Text="Connexion"
               HorizontalOptions="Center"
