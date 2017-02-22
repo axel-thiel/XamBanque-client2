@@ -8,8 +8,7 @@
 
     <StackLayout Orientation="Vertical">
 
-      <StackLayout BackgroundColor="White"
-                   Margin="20,20,20,10"
+      <StackLayout Margin="20,20,20,10"
                    HeightRequest="60">
 
         <Button FontSize="Medium"
@@ -21,8 +20,7 @@
 
       </StackLayout>
 
-      <StackLayout BackgroundColor="White"
-                   Margin="20,10,20,10"
+      <StackLayout Margin="20,10,20,10"
                    HeightRequest="60">
 
         <Button FontSize="Medium"
@@ -32,8 +30,7 @@
 
       </StackLayout>
 
-      <StackLayout BackgroundColor="White"
-                   Margin="20,10,20,10"
+      <StackLayout Margin="20,10,20,10"
                    HeightRequest="60">
 
         <Button FontSize="Medium"
@@ -43,8 +40,7 @@
 
       </StackLayout>
 
-      <StackLayout BackgroundColor="White"
-                   Margin="20,10,20,10"
+      <StackLayout Margin="20,10,20,10"
                    HeightRequest="60">
 
         <Button FontSize="Medium"

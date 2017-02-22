@@ -27,15 +27,15 @@ namespace XamBanque.Views
             // icon on the left side, and page that you want to open after selection
             var page1 = new MasterPageItems() { Title = "Vos comptes", Icon = null, TargetType = typeof(AccountPage) };
             var page2 = new MasterPageItems() { Title = "Virements", Icon = null, TargetType = typeof(BankTransferPage) };
-            var page3 = new MasterPageItems() { Title = "Statistiques", Icon = null, TargetType = typeof(GraphPage) };
-            var page4 = new MasterPageItems() { Title = "Nous contacter", Icon = null, TargetType = typeof(ContactPage) };
+            //var page3 = new MasterPageItems() { Title = "Statistiques", Icon = null, TargetType = typeof(GraphPage) };
+            //var page4 = new MasterPageItems() { Title = "Nous contacter", Icon = null, TargetType = typeof(ContactPage) };
             var page5 = new MasterPageItems() { Title = "Vos Informations", Icon = null, TargetType = typeof(UserPage1) };
 
             // Adding menu items to menuList
             MenuList.Add(page1);
             MenuList.Add(page2);
-            MenuList.Add(page3);
-            MenuList.Add(page4);
+            //MenuList.Add(page3);
+           // MenuList.Add(page4);
             MenuList.Add(page5);
 
             // Setting our list to be ItemSource for ListView in MainPage.xaml
