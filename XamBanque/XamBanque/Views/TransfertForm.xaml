@@ -1,31 +1,72 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="XamBanque.Views.TransfertForm">
+             x:Class="XamBanque.Views.TransfertForm"
+             Title="Ordre de Virement"
+             BackgroundColor="Silver"
+             >
 
   <ContentPage.Content>
 
-    <StackLayout Spacing="10"
-                 x:Name="login_layout"
-                 VerticalOptions="Center"
+    <StackLayout  Margin="10,50,10,10"
+                  Spacing="10"
+                  Orientation="Vertical"
                      >
-      <Entry Placeholder="Somme"
-             Margin="10"
-             x:Name="loginEditText"
-             Text="1"
+      <StackLayout Orientation="Horizontal"
+                   HorizontalOptions="FillAndExpand"
+                   Margin="0,0,0,20"
+                   >
+        
+        <Label
+             x:Name="yourSelectedAccount"
+             Text="Choisir compte à débiter"
+             
               />
 
-      <Entry IsPassword="Détail"
-             Placeholder="PassWord"
-             Margin="10"
-             x:Name="passwordEditText"
-             Text="1"/>
-
-      <Button Text="Connexion"
+      <Button Text="Sélectioner"
               HorizontalOptions="Center"
-              x:Name="connexionButton"
-              Clicked="ConnexionButton_OnClickedAsync"
-              Margin="0,50,0,0"
+              x:Name="selectYourAccount"
+              Clicked="selectYourAccount_OnClickedAsync"
+              Margin="105,0,0,0"
+              BackgroundColor="White"
+              FontSize="10"
+                    />
+        
+      </StackLayout>
+      
+      <StackLayout Orientation="Horizontal"
+                   HorizontalOptions="FillAndExpand"
+                   Margin="0,0,0,20"
+                   >
+        
+           <Label 
+                 x:Name="targetSelectedAccount"
+                 Text="Choisir compte à créditer"
+                  />
+
+          <Button Text="Sélectioner"
+                  HorizontalOptions="Center"
+                  x:Name="selectTargetAccount"
+                  Clicked="selectTargetAccount_OnClickedAsync"
+                  Margin="100,0,0,0"
+                  BackgroundColor="White"
+                   FontSize="10"
+                        />
+        
+      </StackLayout>
+
+     
+      <Entry Placeholder="détails"
+             Margin="20"
+             x:Name="detailEditText"
+           />
+
+      <Button Text="Valider"
+              HorizontalOptions="End"
+              x:Name="validTransfert"
+              Clicked="validTransfert_OnClickedAsync"
+              Margin="0,20,0,0"
               BackgroundColor="White"
                     />
 

@@ -14,5 +14,20 @@ namespace XamBanque.Views
         {
             InitializeComponent();
         }
+
+        private async void selectYourAccount_OnClickedAsync(object sender, EventArgs e)
+        {
+            
+        }
+
+        private async void selectTargetAccount_OnClickedAsync(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void validTransfert_OnClickedAsync(object sender, EventArgs e)
+        {
+
+        }
     }
 }
