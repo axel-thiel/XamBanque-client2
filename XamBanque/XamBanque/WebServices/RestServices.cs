@@ -13,8 +13,8 @@ namespace XamBanque.WebServices
     {
 
         static HttpClient client = new HttpClient();
-        //static string baseUrl = "http://172.20.70.72:8080/xambank";
-       static string baseUrl = "https://xambankserver.herokuapp.com/xambank";
+        static string baseUrl = "http://172.20.70.72:8080/xambank";
+       // static string baseUrl = "https://xambankserver.herokuapp.com/xambank";
 
         public static async Task<UserDTO> connectionAsync(LoginDTO loginDto)
         {

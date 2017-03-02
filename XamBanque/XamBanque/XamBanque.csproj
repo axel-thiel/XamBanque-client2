@@ -36,7 +36,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="DTO\AccountDto.cs" />
     <Compile Include="DTO\LoginDTO.cs" />
+    <Compile Include="DTO\PublicityDto.cs" />
     <Compile Include="DTO\UserDTO.cs" />
     <Compile Include="MenuItems\MasterPageItems.cs" />
     <Compile Include="Objects\Account.cs" />
